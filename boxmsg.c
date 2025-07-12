@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
     // Help Menu
     if (strcmp(argv[1], "-help") == 0) {
         printf("+----------+\n|  BoxMSG  |\n+----------+\n");
-        printf("This is a help menu\nUsage: \nbox [ string/flag ]\nFlags:\n  -random\n  -help");
+        printf("This is a help menu\nUsage: \nbox [ string/flag ]\nFlags:\n  -random\n  -help\n");
         exit(EXIT_FAILURE);
     }
     else if (strcmp(argv[1], "-random") == 0) {
