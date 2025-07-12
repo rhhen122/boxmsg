@@ -3,27 +3,32 @@
 #include <string.h>
 
 int main(int argc, char *argv[]) {
+    // Important Values
+    int length = strlen(argv[1]);
+    char hy[51];
+    int i = 0;
+    // Error Handling
     if (strcmp(argv[1], "help") == 0) {
         printf("This is a help menu\n Usage: \n boxmsg [ string ]\n");
+        exit(EXIT_FAILURE);
+    }
+    else if (strcmp(argv[1], "") == 0 ) {
+        printf("Error %s %s", argv[0], "No Args!");
+        exit(EXIT_FAILURE);
+    }
+    else if (length > 51) {
+        printf("Error %s %s", argv[0], "String is over 50 char");
+        exit(EXIT_FAILURE);
     }
     else {
-        int length = strlen(argv[1]);
-        if (length > 51) {
-            printf("Error %s %s", argv[0], "String is over 50 char");
-            exit(EXIT_FAILURE);
+        while (1) {
+            strcat(hy, "-");
+            i += 1;
+            if (i == length) {
+                break;
             }
-        else {
-            char hy[51];
-            int i = 0;
-            while (1) {
-                strcat(hy, "-");
-                i += 1;
-                if (i == length) {
-                    break;
-                }
-            }
-            printf("+--%s--+\n|  %s  |\n+--%s--+\n", hy, argv[1], hy);
         }
+            printf("+--%s--+\n|  %s  |\n+--%s--+\n", hy, argv[1], hy);
     }
     return EXIT_SUCCESS;
 }
