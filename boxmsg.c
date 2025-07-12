@@ -17,11 +17,11 @@ int main(int argc, char *argv[]) {
 
     // -random
     srand(time(NULL));
-    int random = rand() % 10;
+    int random = rand() % 11;
     char *randomquotes[] = { "Welcome to HELL!", "Vi Vim NeoVim. Helix?",
         "Build a server and document Wikipedia!", "sh! bash is talking!",
         "Emacs is not slow!", "6. This is the sixth quote", "#include <stdbool.h> My ASS!",
-        "why not 'void main()' ?", "Don't install go modules", "Welcome to the terminal!" };
+        "why not 'void main()' ?", "Don't install go modules", "Welcome to the terminal!", "Check your email!" };
     
     // Help Menu
     if (strcmp(argv[1], "-help") == 0) {
