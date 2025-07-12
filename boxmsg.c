@@ -12,10 +12,6 @@ int main(int argc, char *argv[]) {
         printf("This is a help menu\n Usage: \n boxmsg [ string ]\n");
         exit(EXIT_FAILURE);
     }
-    else if (strcmp(argv[1], "") == 0 || length > 51) {
-        printf("Error %s", argv[0]);
-        exit(EXIT_FAILURE);
-    }
     else {
         while (1) {
             strcat(hy, "-");
