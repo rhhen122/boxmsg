@@ -12,6 +12,10 @@
 ```bash
 ./box "Hello, World!"
 ```
+Or for a `"random"` output:
+```bash
+./box -random
+```
 
 ## Install / Uninstall
 For base version:
