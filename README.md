@@ -12,6 +12,10 @@
 ```bash
 ./box "Hello, World!"
 ```
+For `help`:
+```bash
+./box -help
+```
 Or for a `"random"` output:
 ```bash
 ./box -random
