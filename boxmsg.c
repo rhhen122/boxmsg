@@ -1,3 +1,8 @@
+/*
+  Copyright: Roky Edward Iven Henderson :: Code refactored by no-one ));
+                             < [ --- ] >
+  end ));
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
