@@ -6,6 +6,15 @@
 +-----------------+
 ```
 
+
+```bash
+$ make
+$ box -random
++------------------------------------------+
+|  Build a server and document Wikipedia!  |
++------------------------------------------+
+```
+
 `BoxMSG` is a simple `C` program that returns a box along with the user provided input
 
 ## Usage
