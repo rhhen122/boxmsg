@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 int main(int argc, char *argv[]) {
     // Important Values
@@ -13,7 +14,7 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
     else {
-        while (1) {
+        while (true) {
             strcat(hy, "-");
             i += 1;
             if (i == length) {
