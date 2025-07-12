@@ -4,6 +4,6 @@ all: boxmsg.c
 	$(CC) boxmsg.c -o box
 mini: boxmsg-mini.c
 	rm -f box
-	$(CC) boxmsg.c -o box
+	$(CC) boxmsg-mini.c -o box
 clean:
 	rm -f box
