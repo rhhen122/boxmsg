@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
         if (i == length) {
             break;
         }
-        printf("+--%s--+\n|  %s  |\n+--%s--+\n", hy, argv[1], hy);
     }
+    printf("+--%s--+\n|  %s  |\n+--%s--+\n", hy, argv[1], hy);
     return EXIT_SUCCESS;
 }
