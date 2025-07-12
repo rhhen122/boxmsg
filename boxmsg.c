@@ -12,12 +12,8 @@ int main(int argc, char *argv[]) {
         printf("This is a help menu\n Usage: \n boxmsg [ string ]\n");
         exit(EXIT_FAILURE);
     }
-    else if (strcmp(argv[1], "") == 0 ) {
-        printf("Error %s %s", argv[0], "No Args!");
-        exit(EXIT_FAILURE);
-    }
-    else if (length > 51) {
-        printf("Error %s %s", argv[0], "String is over 50 char");
+    else if (strcmp(argv[1], "") == 0 || length > 51) {
+        printf("Error %s", argv[0]);
         exit(EXIT_FAILURE);
     }
     else {
