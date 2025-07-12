@@ -5,7 +5,7 @@
 int main(int argc, char *argv[]) {
     // Important Values
     int length = strlen(argv[1]);
-    char hy[51];
+    char hy[1001];
     int i = 0;
     // Error Handling
     if (strcmp(argv[1], "help") == 0) {
