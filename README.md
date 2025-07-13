@@ -5,8 +5,6 @@
 |  Hello, World!  |
 +-----------------+
 ```
-
-
 ```bash
 $ make
 $ box -random
@@ -14,9 +12,7 @@ $ box -random
 |  Build a server and document Wikipedia!  |
 +------------------------------------------+
 ```
-
 `BoxMSG` is a simple `C` program that returns a box along with the user provided input
-
 ## Usage
 ```bash
 ./box "Hello, World!"
@@ -29,7 +25,6 @@ Or for a `"random"` output:
 ```bash
 ./box -random
 ```
-
 ## Install / Uninstall
 For base version:
 ```bash
@@ -43,7 +38,6 @@ Uninstall (Clean):
 ```
 make clean
 ```
-
 ## Caveats
  - Max char input (Fuck you C) 1000 char
  - Multiline support (Implement it yourself)
