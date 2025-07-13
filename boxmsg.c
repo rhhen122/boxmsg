@@ -23,8 +23,8 @@ int main(int argc, char *argv[]) {
         "Emacs is not slow!", "6. This is the sixth quote", "#include <stdbool.h> My ASS!",
         "why not 'void main()' ?", "Don't install go modules", "Welcome to the terminal!", "Check your email!" };
     
-    // Help Menu
-    if (strcmp(argv[1], "-help") == 0) {
+    // -help
+    if (strcmp(argv[1], "-help") == 0 || strcmp(argv[1], "") == 0) {
         printf("+----------+\n|  BoxMSG  |\n+----------+\n");
         printf("This is a help menu\nUsage: \nbox [ string/flag ]\nFlags:\n  -random\n  -help\n");
         exit(EXIT_FAILURE);
