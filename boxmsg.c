@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
         "why not 'void main()' ?", "Don't install go modules", "Welcome to the terminal!", "Check your email!" };
     
     // -help
-    if (strcmp(argv[1], "-help") == 0 || strcmp(argv[1], "") == 0) {
+    if (strcmp(argv[1], "-help") == 0) {
         printf("+----------+\n|  BoxMSG  |\n+----------+\n");
         printf("This is a help menu\nUsage: \nbox [ string/flag ]\nFlags:\n  -random\n  -help\n");
         exit(EXIT_FAILURE);
